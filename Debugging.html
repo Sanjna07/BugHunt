@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Stages of Debugging</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slideshow-container">
+        <!-- Radio buttons for navigation (hidden) -->
+        <input type="radio" name="slide" id="slide1" checked>
+        <input type="radio" name="slide" id="slide2">
+        <input type="radio" name="slide" id="slide3">
+        <input type="radio" name="slide" id="slide4">
+        <input type="radio" name="slide" id="slide5">
+        <input type="radio" name="slide" id="slide6">
+        <input type="radio" name="slide" id="slide7">
+        <input type="radio" name="slide" id="slide8">
+        <input type="radio" name="slide" id="slide9">
+
+        <!-- Progress Bar -->
+        <div class="progress-bar">
+            <div class="progress-fill"></div>
+        </div>
+
+        <!-- Title Slide -->
+        <div class="slide" id="s1">
+            <div class="slide-content">
+                <h1 class="glitch-text" data-text="The Stages of Debugging">The Stages of Debugging</h1>
+                <p class="subtitle fade-in">A Developer's Journey Through Code Hell</p>
+                <div class="code-bg">
+                    <span>if (bug.exists()) {</span>
+                    <span>&nbsp;&nbsp;developer.cry();</span>
+                    <span>}</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Intro Slide -->
+        <div class="slide" id="s2">
+            <div class="slide-content">
+                <h2 class="slide-in-left">Welcome to the Debugging Adventure!</h2>
+                <p class="typewriter">Every developer goes through these 5 stages...</p>
+                <div class="bug-icon bounce">🐛</div>
+                <p class="fade-in-up">Are you ready to face your coding demons?</p>
+            </div>
+        </div>
+
+        <!-- Stage 1: Denial -->
+        <div class="slide" id="s3">
+            <div class="slide-content">
+                <div class="stage-number">Stage 1</div>
+                <h2 class="shake">DENIAL</h2>
+                <p class="quote shake">"This code should work, I swear!"</p>
+                <div class="thought-bubble">
+                    <p>💭 "I'm sure it's just the compiler being weird..."</p>
+                    <p>💭 "Maybe if I just run it one more time..."</p>
+                    <p>💭 "It worked on my machine!"</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stage 2: Anger -->
+        <div class="slide" id="s4">
+            <div class="slide-content">
+                <div class="stage-number">Stage 2</div>
+                <h2 class="flash-red">ANGER</h2>
+                <p class="quote flash-red">"WHY is it not compiling??"</p>
+                <div class="angry-code">
+                    <p class="flash-text">ERROR: Line 42</p>
+                    <p class="flash-text">ERROR: Unexpected token</p>
+                    <p class="flash-text">ERROR: Cannot find symbol</p>
+                </div>
+                <div class="rage-meter">
+                    <div class="rage-fill"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stage 3: Bargaining -->
+        <div class="slide" id="s5">
+            <div class="slide-content">
+                <div class="stage-number">Stage 3</div>
+                <h2>BARGAINING</h2>
+                <p class="quote">"Okay Google, please help me..."</p>
+                <div class="search-bar">
+                    <span class="typing-dots">Searching</span>
+                    <span class="dots">
+                        <span>.</span>
+                        <span>.</span>
+                        <span>.</span>
+                    </span>
+                </div>
+                <div class="search-results fade-in-sequence">
+                    <p>📝 StackOverflow: "Why doesn't my code work?"</p>
+                    <p>📚 "JavaScript for Dummies"</p>
+                    <p>🎥 "10 Hour Coding Bootcamp - FAST!"</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stage 4: Depression -->
+        <div class="slide" id="s6">
+            <div class="slide-content">
+                <div class="stage-number">Stage 4</div>
+                <h2 class="grayscale">DEPRESSION</h2>
+                <p class="quote grayscale">"Maybe I should quit coding..."</p>
+                <div class="rain-container">
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                    <div class="rain"></div>
+                </div>
+                <div class="sad-thoughts fade-to-gray">
+                    <p>😔 "I'll never be a real programmer..."</p>
+                    <p>😞 "Maybe I should become a farmer..."</p>
+                    <p>😢 "Why did I choose this career?"</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Stage 5: Acceptance -->
+        <div class="slide" id="s7">
+            <div class="slide-content">
+                <div class="stage-number">Stage 5</div>
+                <h2 class="rainbow-text">ACCEPTANCE</h2>
+                <p class="quote success">"Found the missing semicolon :)"</p>
+                <div class="confetti-container">
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                    <div class="confetti"></div>
+                </div>
+                <div class="victory-code">
+                    <p class="code-line">console.log("It works!");</p>
+                    <p class="success-message pulse">✅ Build Successful!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Closing Slide -->
+        <div class="slide" id="s8">
+            <div class="slide-content">
+                <h1 class="hero-text">Debugging = Developer's True Superpower 🦸‍♀️</h1>
+                <div class="superhero-badge rotate">
+                    <span>DEBUGGER</span>
+                    <span>LEVEL 100</span>
+                </div>
+                <p class="wisdom fade-in-up">"Every bug is just a feature waiting to be understood"</p>
+                <div class="celebration-emoji">🎉 🎊 🥳 🚀</div>
+            </div>
+        </div>
+
+        <!-- Fun Facts Slide -->
+        <div class="slide" id="s9">
+            <div class="slide-content">
+                <h2 class="bounce-in">Fun Debugging Facts!</h2>
+                <div class="facts-container">
+                    <div class="fact-card slide-in-left">
+                        <h3>🐛 The First Bug</h3>
+                        <p>The term "bug" was coined in 1947 when Grace Hopper found an actual moth stuck in a computer!</p>
+                    </div>
+                    <div class="fact-card slide-in-right">
+                        <h3>⏰ Time Spent</h3>
+                        <p>Developers spend 75% of their time debugging rather than writing new code!</p>
+                    </div>
+                    <div class="fact-card slide-in-up">
+                        <h3>🔥 The Rubber Duck</h3>
+                        <p>Rubber duck debugging is a real technique where you explain your code to a rubber duck!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Labels -->
+        <div class="nav-buttons">
+            <label for="slide1" class="nav-btn prev">❮ Previous</label>
+            <div class="slide-counter">
+                <span class="current">1</span> / <span>9</span>
+            </div>
+            <label for="slide2" class="nav-btn next">Next ❯</label>
+        </div>
+
+        <!-- Slide Indicators -->
+        <div class="indicators">
+            <label for="slide1" class="dot"></label>
+            <label for="slide2" class="dot"></label>
+            <label for="slide3" class="dot"></label>
+            <label for="slide4" class="dot"></label>
+            <label for="slide5" class="dot"></label>
+            <label for="slide6" class="dot"></label>
+            <label for="slide7" class="dot"></label>
+            <label for="slide8" class="dot"></label>
+            <label for="slide9" class="dot"></label>
+        </div>
+
+        <div class="navigation-dots">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+            <label for="slide4"></label>
+            <label for="slide5"></label>
+            <label for="slide6"></label>
+            <label for="slide7"></label>
+            <label for="slide8"></label>
+            <label for="slide9"></label>
+        </div>
+
+    </div>
+</body>
+</html>
