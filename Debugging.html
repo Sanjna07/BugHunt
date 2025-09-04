@@ -215,5 +215,32 @@
         </div>
 
     </div>
-</body>
+    <script>
+      (function() {
+        const totalSlides = 9;
+        let current = 1;
+        let timer;
+        function showSlide(n) {
+          document.getElementById('slide' + n).checked = true;
+        }
+        function nextSlide() {
+          current = current % totalSlides + 1;
+          showSlide(current);
+        }
+        function resetTimer() {
+          clearInterval(timer);
+          timer = setInterval(nextSlide, 4500);
+        }
+        // Listen for manual navigation
+        for (let i = 1; i <= totalSlides; i++) {
+          document.getElementById('slide' + i).addEventListener('change', function() {
+            current = i;
+            resetTimer();
+          });
+        }
+        // Start auto-advance
+        timer = setInterval(nextSlide, 4500);
+      })();
+    </script>
+  </body>
 </html>
